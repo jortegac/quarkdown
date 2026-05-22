@@ -66,6 +66,19 @@ subprojects {
         }
     }
 
+    // Bundle the applicable LICENSE into every Jar's META-INF directory so that
+    // the license that applies to each artifact travels with it, as required by
+    // GPL v3 §5(a) and AGPL v3 §5(a). Modules that ship their own LICENSE
+    // (currently the AGPL-licensed `quarkdown-cli` and `quarkdown-lsp`) use that
+    // file; everything else falls back to the root GPL v3 LICENSE.
+    tasks.withType<Jar>().configureEach {
+        val moduleLicense = projectDir.resolve("LICENSE")
+        val licenseFile = if (moduleLicense.exists()) moduleLicense else rootProject.file("LICENSE")
+        from(licenseFile) {
+            into("META-INF")
+        }
+    }
+
     afterEvaluate {
         if (project.name in publicationExcludedSubprojects) return@afterEvaluate
         if (!plugins.hasPlugin("java")) return@afterEvaluate
@@ -77,6 +90,11 @@ subprojects {
         // upstream repo and for any fork. Credentials are read from `GITHUB_ACTOR` and
         // `GITHUB_TOKEN` in CI, and fall back to the `gpr.user` / `gpr.key` Gradle properties for
         // local publication.
+        //
+        // `GhPages` is a file-system repository whose output is synced to the fork's
+        // `gh-pages` branch by `.github/workflows/publish-fork.yml`. GitHub Pages then
+        // serves it as a public, anonymous Maven repo at
+        // `https://jortegac.github.io/quarkdown/`.
         extensions.configure<PublishingExtension> {
             publications {
                 create<MavenPublication>("maven") {
@@ -99,6 +117,10 @@ subprojects {
                         password = System.getenv("GITHUB_TOKEN")
                             ?: providers.gradleProperty("gpr.key").orNull
                     }
+                }
+                maven {
+                    name = "GhPages"
+                    url = uri(rootProject.layout.buildDirectory.dir("gh-pages-maven-repo"))
                 }
             }
         }
@@ -380,6 +402,13 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
                     ?: providers.gradleProperty("gpr.key").orNull
             }
+        }
+        // File-system repository mirroring the subproject `GhPages` setup above,
+        // so the install-lib zip lands in the same Maven layout consumed from
+        // `https://jortegac.github.io/quarkdown/`.
+        maven {
+            name = "GhPages"
+            url = uri(rootProject.layout.buildDirectory.dir("gh-pages-maven-repo"))
         }
     }
 }

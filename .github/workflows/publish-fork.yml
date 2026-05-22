@@ -1,13 +1,20 @@
 # Fork-only publish workflow.
 #
 # Runs only on the jortegac fork, by manual dispatch, to push the JVM modules
-# and the install-lib zip to this fork's GitHub Packages registry
-# (https://maven.pkg.github.com/jortegac/quarkdown).
+# and the install-lib zip to two places:
+#
+#   1. This fork's GitHub Packages registry
+#      (https://maven.pkg.github.com/jortegac/quarkdown). Requires auth.
+#
+#   2. The fork's gh-pages branch, served by GitHub Pages as a public,
+#      anonymous Maven repository at https://jortegac.github.io/quarkdown/.
+#      This lets downstream consumers (e.g. quarkdown-viewer on Railway)
+#      resolve Quarkdown JARs without storing a GitHub credential.
 #
 # This file is intentionally not included in the upstream PR branch
 # (feat/publish-github-packages). Keep it on `publish-fork` only.
 
-name: Publish to fork's GitHub Packages
+name: Publish to fork's GitHub Packages and Pages
 
 on:
   workflow_dispatch:
@@ -21,7 +28,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
 
     steps:
@@ -49,3 +56,19 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew publishAllPublicationsToGitHubPackagesRepository --no-daemon
+
+      - name: Publish to local GhPages Maven repo
+        run: ./gradlew publishAllPublicationsToGhPagesRepository --no-daemon
+
+      - name: Deploy Maven repo to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/gh-pages-maven-repo
+          publish_branch: gh-pages
+          # Retain previously published versions on each run so e.g. 2.0.1 and
+          # 2.0.2 can coexist under the same /com/quarkdown/<artifact>/ tree.
+          keep_files: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'chore(gh-pages): publish Maven artifacts for ${{ github.sha }}'
