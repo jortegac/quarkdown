@@ -260,7 +260,7 @@ curl -fsSL https://raw.githubusercontent.com/quarkdown-labs/get-quarkdown/refs/h
 ```
 
 Root privileges let the script install Quarkdown into `/opt/quarkdown` and its wrapper script into `/usr/local/bin/quarkdown`.  
-If missing, Java 17, Node.js and npm will be installed automatically using the system's package manager.
+If missing, Node.js will be installed automatically using the system's package manager.
 
 For more installation options, check out [get-quarkdown](https://github.com/quarkdown-labs/get-quarkdown).
 
@@ -279,9 +279,7 @@ irm https://raw.githubusercontent.com/quarkdown-labs/get-quarkdown/refs/heads/ma
 ### Scoop (Windows)
 
 ```shell
-scoop bucket add java
-scoop bucket add quarkdown https://github.com/quarkdown-labs/scoop-quarkdown
-scoop install quarkdown
+scoop bucket add quarkdown https://github.com/quarkdown-labs/scoop-quarkdown; scoop install quarkdown
 ```
 
 ### GitHub Actions
@@ -299,16 +297,15 @@ or build it with `gradlew installDist`.
 Optionally, adding `<install_dir>/bin` to your `PATH` allows you easier access Quarkdown.
 
 Requirements:
-- Java 17 or higher
 - (Only for PDF export) Node.js, npm, Puppeteer. See [*PDF export*](https://quarkdown.com/wiki/pdf-export) for details.
 
 </details>
 
 &nbsp;
 
-## Quickstart 🆕
+## Quickstart
 
-New user? You'll find **everything you need** in the **[Quickstart guide](https://quarkdown.com/wiki/quickstart)** to bring life to your first document!
+New user? You'll find **everything you need** in the **[Quickstart guide](https://quarkdown.com/wiki/quickstart)** to bring your first document to life!
 
 &nbsp;
 
@@ -316,10 +313,6 @@ New user? You'll find **everything you need** in the **[Quickstart guide](https:
 
 **`quarkdown create [directory]`** will launch the prompt-based project wizard, making it quicker than ever
 to set up a new Quarkdown project, with all [metadata](https://quarkdown.com/wiki/document-metadata) and initial content already present.
-
-For more information about the project creator, check out its [wiki page](https://quarkdown.com/wiki/cli-project-creator).
-
-Alternatively, you may manually create a `.qd` source file and start from there.
 
 &nbsp;
 

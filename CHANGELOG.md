@@ -2,9 +2,80 @@
 
 ## [Unreleased]
 
-### Added
+## [2.1.2] - 2026-05-24
 
-&nbsp;
+### Changed
+
+ 
+
+#### Precompiled templates
+
+Templates, used in `quarkdown create` and live preview, are now precompiled at build time. This results in a smaller distribution size and faster startup times for these features.
+
+ 
+
+### Fixed
+
+ 
+
+#### Preserve rich formatting in iterated lists
+
+The following snippet now correctly preserves formatting when iterating over a Markdown list, rather than treating entries as plain text:
+
+```markdown
+.var {mylist}
+  - text
+  - *italic*
+  - **bold**
+
+.row alignment:{spacearound}
+    .foreach {.mylist}
+        .1
+```
+
+ 
+
+#### Fixed live preview sometimes failing on edit
+
+Fixed an issue that caused live preview to crash with an _"Address already in use"_ error on recompile.
+
+ 
+
+#### [theme/paperwhite] Cleaned up border around code snippets in error boxes
+
+Fixed unexpected borders around code snippets in error boxes when using the `paperwhite` color theme.
+
+* * *
+
+### Sponsors
+
+Thanks to our sponsors! 🎉
+
+@vitto4
+
+<a href="https://falconer.com"><img src="https://raw.githubusercontent.com/iamgio/quarkdown/project-files/images/sponsors/falconer.jpeg" alt="Falconer" width="350"></a>
+
+## [2.1.1] - 2026-05-23
+
+### Fixed
+
+#### Fixed project creator and live preview crashing on bundled Java runtime
+
+Fixed an issue that caused `quarkdown create` and live preview to crash with a template compilation error on distributions that use the bundled Java runtime. 
+
+* * *
+
+### Sponsors
+
+Thanks to our sponsors! 🎉
+
+@vitto4
+
+<a href="https://falconer.com"><img src="https://raw.githubusercontent.com/iamgio/quarkdown/project-files/images/sponsors/falconer.jpeg" alt="Falconer" width="350"></a>
+
+## [2.1.0] - 2026-05-23
+
+### Added
 
 #### Maven artifacts on GitHub Packages
 
@@ -65,8 +136,6 @@ ln -s "$(quarkdown doctor get agent-skill)" ~/.claude/skills/quarkdown
 
 See the [agent skill documentation](https://quarkdown.com/wiki/agent-skill) for more details.
 
-&nbsp;
-
 #### [Read environment variables](https://quarkdown.com/wiki/environment)
 
 The new `.env {name}` function reads an environment variable from the host system, returning its value as a string or `none` if unset.
@@ -74,8 +143,6 @@ The new `.env {name}` function reads an environment variable from the host syste
 ```markdown
 The home directory is .env {HOME}::otherwise {unknown}
 ```
-
-&nbsp;
 
 #### [`process` permission](https://quarkdown.com/wiki/cli-compiler#permissions)
 
@@ -85,52 +152,61 @@ A new `process` permission gates access to the host process environment. Reading
 quarkdown c main.qd --allow process
 ```
 
-&nbsp;
-
 #### [`doctor` command](https://quarkdown.com/wiki/cli-doctor)
 
-The new `quarkdown doctor` command group reports information about the current Quarkdown installation, intended for scripting and tooling that need to introspect Quarkdown's environment.
+The new `quarkdown doctor` command group reports information about the current Quarkdown installation:
 
-The first available getter, `quarkdown doctor get install-dir`, prints the absolute path of the install directory to standard output:
+-   `doctor env` checks the runtime environment for possible issues.
 
-```shell
-INSTALL="$(quarkdown doctor get install-dir)"
-ls "$INSTALL/docs"
-```
+-   `doctor get *` commands are intended for scripting and tooling that need to introspect Quarkdown's environment:
 
-&nbsp;
+    ```shell
+    INSTALL="$(quarkdown doctor get install-dir)"
+    ls "$INSTALL/docs"
+    ```
 
 ### Changed
 
-&nbsp;
-
 #### Bundled Java runtime
 
-The Quarkdown distribution now includes a minimal (~50MB) Java runtime, so the CLI runs out of the box without requiring a separate Java installation on your system. Installers have been updated accordingly.
+The Quarkdown distribution now includes a minimal (~50MB) Java runtime, so the CLI runs out of the box without requiring a separate Java installation on your system.
 
-&nbsp;
+Each release ships a per-platform executable (`linux-x64`, `macos-x64`, `macos-aarch64`, `windows-x64`).
 
 #### Improved function call performance
 
 Function call-heavy documents now compile faster, by extracting metadata once at function load time.
 
-&nbsp;
-
 ### Fixed
 
-&nbsp;
+#### PDF size and generation time reduction in `paged` documents
+
+For `paged` documents, PDF generation now produces output that is:
+
+-   up to 90% smaller,
+-   generated up to 2x faster.
+
+Thanks @philipredstone!
 
 #### Fixed inline code inside compact footnote definitions
 
-Compact footnotes like `` [^: text with `code`] `` were incorrectly parsed as plain text instead of footnotes. The definition pattern now allows backtick-enclosed spans inside the footnote body.
+Compact footnotes like ``[^: text with `code`]`` were incorrectly parsed as plain text instead of footnotes. The definition pattern now allows backtick-enclosed spans inside the footnote body.
 
 Thanks @Shreyansh-Kushwaha!
+
+* * *
+
+### Sponsors
+
+Thanks to our sponsors! 🎉
+
+@vitto4
+
+<a href="https://falconer.com"><img src="https://raw.githubusercontent.com/iamgio/quarkdown/project-files/images/sponsors/falconer.jpeg" alt="Falconer" width="350"></a>
 
 ## [2.0.1] - 2026-05-04
 
 ### Added
-
- 
 
 #### [Execution timeout](https://quarkdown.com/wiki/cli-options#other-options)
 
@@ -140,29 +216,19 @@ The new `--timeout` flag sets the maximum time, in seconds, allowed for the enti
 quarkdown c main.qd --pdf --timeout 120
 ```
 
- 
-
 #### New locales
 
 New locales have been added: Polish, Portuguese, Russian and Ukrainian.
 
 Thanks @emsspree!
 
- 
-
 ### Changed
-
- 
 
 #### Added link-to-root in new docs projects
 
 When creating a `docs` project, `quarkdown create` now links the top-left title to the root document, for easier navigation back to the home page.
 
- 
-
 ### Fixed
-
- 
 
 #### Fixed trailing `\` in Quarkdoc multiline signatures
 
@@ -182,8 +248,6 @@ Thanks to our sponsors! 🎉
 
 ### Added
 
- 
-
 #### [Permission system](https://quarkdown.com/wiki/cli-compiler#permissions)
 
 Quarkdown's permission system controls what a document can access during compilation, for increased safety.
@@ -197,8 +261,6 @@ quarkdown c main.qd --allow global-read --deny native-content
 
 Available permissions: `project-read` (default), `global-read`, `network`, `native-content` (default), `all`. See the wiki page for more details.
 
- 
-
 #### [Line continuation in function calls](https://quarkdown.com/wiki/syntax-of-a-function-call#line-continuation)
 
 A backslash (`\`) at the end of a line lets you split a function call's arguments across multiple lines.
@@ -210,13 +272,9 @@ This improves readability for calls with many parameters:
            padding:{1px}
 ```
 
- 
-
 #### [HTML static assets](https://quarkdown.com/wiki/html-static-assets)
 
 A `public/` directory in your project root lets you ship arbitrary files, such as `robots.txt` or `CNAME`, alongside the compiled output. Quarkdown copies the entire contents into the root of the output directory, preserving the original structure, without any processing.
-
- 
 
 #### [HTML options, sitemap and canonical links](https://quarkdown.com/wiki/html-options)
 
@@ -229,8 +287,6 @@ The new `.htmloptions` function configures HTML-specific generation settings. It
 .htmloptions baseurl:{https://quarkdown.com/wiki}
 ```
 
- 
-
 #### [Keybindings](https://quarkdown.com/wiki/keybindings)
 
 The new `.keybinding {keys}` function displays a keyboard shortcut as styled key labels.
@@ -240,13 +296,9 @@ Modifier keys are platform-aware: on macOS, they automatically display native sy
 Press .keybinding {Mod+Shift+K} to delete the line.
 ```
 
- 
-
 #### [Linked cross-references for all referenceable types](https://quarkdown.com/wiki/cross-references)
 
 Cross-references (`.ref`) to figures, tables, code blocks, math equations, and custom numbered blocks are now rendered as clickable links that navigate to the referenced element. Previously, only heading references were linked.
-
- 
 
 #### Root path symbol (`@`) in links and images
 
@@ -262,8 +314,6 @@ In the previous example, `@/assets/logo.png` resolves to `./assets/logo.png`, wh
 
 This `@` symbol is internally called _media passthrough prefix_, as it prevents the media storage system from registering the path as a media reference, and instead treats it as a passthrough to be copied verbatim.
 
- 
-
 #### [`.image` primitive function](https://quarkdown.com/wiki/primitives#images)
 
 The new `.image` function creates images with fine-grained control over their properties, including media storage opt-out. The `mediastorage:{no}` parameter lets an image reference a fixed relative path, useful in combination with the new `public/` directory for shared assets.
@@ -272,17 +322,11 @@ The new `.image` function creates images with fine-grained control over their pr
 .image {photo.jpg} label:{A photo} title:{A caption} width:{200px} mediastorage:{no}
 ```
 
- 
-
 ### Changed
-
- 
 
 #### Changed default output directory to `./quarkdown-output` (breaking change)
 
 The default output directory (`--out`) was changed from `./output` to `./quarkdown-output` to avoid conflicts and ambiguity. If you were relying on the old default, please update your workflow accordingly or compile with `--out ./output` explicitly.
-
- 
 
 #### Fully offline HTML output
 
@@ -298,44 +342,30 @@ As before, opt-in libraries, such as Mermaid and KaTeX, are still only included 
 > [!NOTE]
 > User-picked fonts from Google Fonts are still loaded remotely.
 
- 
-
 #### Parallel rendering
 
 Rendering now runs in parallel across sibling elements, improving performance on large documents.
-
- 
 
 #### Static preview output file name (breaking change)
 
 When launching with `--preview` (without `--out-name`), the output directory name no longer matches `.docname`, because its dynamic nature may easily break the preview. Instead, it's now `preview-<mainfile>-<hash>`.  
 In order to get the `.docname`-based output name, consider compiling without `--preview`.
 
- 
-
 #### Lightweight media storage IO
 
 IO over the media storage system is now more lightweight and secure, as media files are now copied by reference rather than by content. Each media export now also comes with a checksum that's validated on subsequent exports to avoid unnecessary copying.
-
- 
 
 #### Renamed `Injection` stdlib module to `Html`
 
 The `Injection` module, which contains functions related to raw HTML injection, was renamed to `Html`.
 This change breaks previous references to the documentation of the module and its functions.
 
- 
-
 ### Fixed
-
- 
 
 #### Fixed live preview flashing with dark themes
 
 Fixed an issue that caused live preview to display white flashes when using dark color themes, during the crossfade transition.
 The transition background now matches the target's background color.
-
- 
 
 #### Fixed broken wiki links in Quarkdoc
 
@@ -806,7 +836,13 @@ Shout out to our sponsors! 🎉
 
 <a href="https://falconer.com"><img src="https://raw.githubusercontent.com/iamgio/quarkdown/project-files/images/sponsors/falconer.jpeg" alt="Falconer" width="350"></a>
 
-[Unreleased]: https://github.com/iamgio/quarkdown/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/iamgio/quarkdown/compare/v2.1.2...HEAD
+
+[2.1.2]: https://github.com/iamgio/quarkdown/compare/v2.1.1...v2.1.2
+
+[2.1.1]: https://github.com/iamgio/quarkdown/compare/v2.1.0...v2.1.1
+
+[2.1.0]: https://github.com/iamgio/quarkdown/compare/v2.0.1...v2.1.0
 
 [2.0.1]: https://github.com/iamgio/quarkdown/compare/v2.0.0...v2.0.1
 
