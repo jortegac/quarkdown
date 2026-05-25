@@ -1,0 +1,111 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-libs",
+    "version": "2.1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-libs-2.1.2.jar",
+          "url": "quarkdown-libs-2.1.2.jar",
+          "size": 13904,
+          "sha512": "eb1e7b0b27c9a013272bcea06a8d67963b4449bc858776bc80afaeb66c8972021d08753b9bd6e5d67fb9c00d45660f32ed8ae23b896561b7da9cb0c2e78f515b",
+          "sha256": "1e0ea206d0c2f03956309b9a50f9833ca5c714506bbc76e46a3ba2495c876a51",
+          "sha1": "720078f2b94e57d6d7a431a676edd4fe8f5dd7e9",
+          "md5": "cf9111fc3e782a6b3c529ab268047da0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-libs-2.1.2.jar",
+          "url": "quarkdown-libs-2.1.2.jar",
+          "size": 13904,
+          "sha512": "eb1e7b0b27c9a013272bcea06a8d67963b4449bc858776bc80afaeb66c8972021d08753b9bd6e5d67fb9c00d45660f32ed8ae23b896561b7da9cb0c2e78f515b",
+          "sha256": "1e0ea206d0c2f03956309b9a50f9833ca5c714506bbc76e46a3ba2495c876a51",
+          "sha1": "720078f2b94e57d6d7a431a676edd4fe8f5dd7e9",
+          "md5": "cf9111fc3e782a6b3c529ab268047da0"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-libs-2.1.2-sources.jar",
+          "url": "quarkdown-libs-2.1.2-sources.jar",
+          "size": 13904,
+          "sha512": "be3478e4b3ac541180f1d9a4da1a2048de71f4975425db60ee3516871539a8accd929ceda97c06381050b7573c5ccd3358b9c1c7774ea1f531ef21c1ef93199a",
+          "sha256": "5a72354d2256bd9aa719026d189d0f3804bf982ee0fb46185c7cb2733c60608c",
+          "sha1": "c260928a6b6fd977f326929401d26dec9dc21469",
+          "md5": "0ab3848b7fbd284d7f6695abc3f4684d"
+        },
+        {
+          "name": "quarkdown-libs-2.1.2-sources.jar",
+          "url": "quarkdown-libs-2.1.2-sources.jar",
+          "size": 13904,
+          "sha512": "be3478e4b3ac541180f1d9a4da1a2048de71f4975425db60ee3516871539a8accd929ceda97c06381050b7573c5ccd3358b9c1c7774ea1f531ef21c1ef93199a",
+          "sha256": "5a72354d2256bd9aa719026d189d0f3804bf982ee0fb46185c7cb2733c60608c",
+          "sha1": "c260928a6b6fd977f326929401d26dec9dc21469",
+          "md5": "0ab3848b7fbd284d7f6695abc3f4684d"
+        }
+      ]
+    }
+  ]
+}

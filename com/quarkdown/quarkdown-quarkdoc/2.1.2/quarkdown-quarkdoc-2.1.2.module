@@ -1,0 +1,145 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-quarkdoc",
+    "version": "2.1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-2.1.2.jar",
+          "url": "quarkdown-quarkdoc-2.1.2.jar",
+          "size": 213699,
+          "sha512": "aac74f7fd3527ee2865c4e7614fbf2b2840423cd1009a02c12242800f6a675a82e2c200f0655845cf9ac5e16b5615203722ce0405114de3e2496cf384540ed56",
+          "sha256": "8b5c2cf98e8498c21592f5ee011ab310be820a26d84019a338df195388c45637",
+          "sha1": "72f6acb8ed5aed272f035e55068c827552477884",
+          "md5": "42655ba8fc22c321e855562f5d31c76d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.1.2"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-quarkdoc-reader",
+          "version": {
+            "requires": "2.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect"
+        },
+        {
+          "group": "org.jetbrains.dokka",
+          "module": "dokka-base",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-2.1.2.jar",
+          "url": "quarkdown-quarkdoc-2.1.2.jar",
+          "size": 213699,
+          "sha512": "aac74f7fd3527ee2865c4e7614fbf2b2840423cd1009a02c12242800f6a675a82e2c200f0655845cf9ac5e16b5615203722ce0405114de3e2496cf384540ed56",
+          "sha256": "8b5c2cf98e8498c21592f5ee011ab310be820a26d84019a338df195388c45637",
+          "sha1": "72f6acb8ed5aed272f035e55068c827552477884",
+          "md5": "42655ba8fc22c321e855562f5d31c76d"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-2.1.2-sources.jar",
+          "url": "quarkdown-quarkdoc-2.1.2-sources.jar",
+          "size": 56236,
+          "sha512": "47245f4edab07a0a1f417ebda700b54d28cadd34946ed00e9ddb5700a658c19c37eefc5b130358f648063af795b402a8892568e5963a5180b79b941806d129b2",
+          "sha256": "b47da172fd4e19edffd94258a6123acc1bc5c3678f403b2f5b0cf5dcbf9d9fd1",
+          "sha1": "3a9711897f2226e076da43c6de31742e36cf8592",
+          "md5": "4e963d057f201018e926d4726ad26db2"
+        },
+        {
+          "name": "quarkdown-quarkdoc-2.1.2-sources.jar",
+          "url": "quarkdown-quarkdoc-2.1.2-sources.jar",
+          "size": 56236,
+          "sha512": "47245f4edab07a0a1f417ebda700b54d28cadd34946ed00e9ddb5700a658c19c37eefc5b130358f648063af795b402a8892568e5963a5180b79b941806d129b2",
+          "sha256": "b47da172fd4e19edffd94258a6123acc1bc5c3678f403b2f5b0cf5dcbf9d9fd1",
+          "sha1": "3a9711897f2226e076da43c6de31742e36cf8592",
+          "md5": "4e963d057f201018e926d4726ad26db2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-interaction",
+    "version": "2.1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.1.2.jar",
+          "url": "quarkdown-interaction-2.1.2.jar",
+          "size": 34108,
+          "sha512": "b73a9d536152a68588121461372034ac396bed28ce78079ee8d3feb043382f470692ec82fbf16524309179d48af3c3d81951d200d516fff3f4aadbd2605d7de4",
+          "sha256": "ae52403b95162530f49bd94cb12b791e34a7f08c6f23d76c1f7337d43110bc12",
+          "sha1": "34dc4d32b5a415412a99b8e74c15a75a7a9c55c0",
+          "md5": "973c381c620522d53bae644b2adf10d6"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.1.2.jar",
+          "url": "quarkdown-interaction-2.1.2.jar",
+          "size": 34108,
+          "sha512": "b73a9d536152a68588121461372034ac396bed28ce78079ee8d3feb043382f470692ec82fbf16524309179d48af3c3d81951d200d516fff3f4aadbd2605d7de4",
+          "sha256": "ae52403b95162530f49bd94cb12b791e34a7f08c6f23d76c1f7337d43110bc12",
+          "sha1": "34dc4d32b5a415412a99b8e74c15a75a7a9c55c0",
+          "md5": "973c381c620522d53bae644b2adf10d6"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.1.2-sources.jar",
+          "url": "quarkdown-interaction-2.1.2-sources.jar",
+          "size": 20317,
+          "sha512": "695e10dfe11fc8fd516af138db7a1f48e8e72686250fee8a59d9ad8348e0a7bf7f2f74403df198c026e5e6f8fee47b978db33e36f3e719ef504a0c941a3fb90a",
+          "sha256": "3c6cd43b1cec729b85453fdb2e1dbd207f29c19e2ee2a808ab3cc204c3fecced",
+          "sha1": "d722ce1be730943919eaa994f642f358b202b3af",
+          "md5": "9249bc207e753b05495d09b547617e8f"
+        },
+        {
+          "name": "quarkdown-interaction-2.1.2-sources.jar",
+          "url": "quarkdown-interaction-2.1.2-sources.jar",
+          "size": 20317,
+          "sha512": "695e10dfe11fc8fd516af138db7a1f48e8e72686250fee8a59d9ad8348e0a7bf7f2f74403df198c026e5e6f8fee47b978db33e36f3e719ef504a0c941a3fb90a",
+          "sha256": "3c6cd43b1cec729b85453fdb2e1dbd207f29c19e2ee2a808ab3cc204c3fecced",
+          "sha1": "d722ce1be730943919eaa994f642f358b202b3af",
+          "md5": "9249bc207e753b05495d09b547617e8f"
+        }
+      ]
+    }
+  ]
+}
