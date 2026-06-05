@@ -1,0 +1,139 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-stdlib",
+    "version": "2.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-stdlib-2.2.0.jar",
+          "url": "quarkdown-stdlib-2.2.0.jar",
+          "size": 312924,
+          "sha512": "245e7fec39139c3b27672743502e4825b666abd860a60be3669610250ddc8abbdf87ba5c0405eaa958f48972348b4db1503212e9b46ebae18fe28031541a43ce",
+          "sha256": "44e8fdb4aa95555965ec308f8a40ae59fce383c3ef29c0f3f5d4129be7205e4f",
+          "sha1": "8bda11af8f51535e50ab9fd79d23b3ab2fb5ea13",
+          "md5": "15e9c974bf16efb947f9adc1fec7cd70"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "se.sawano.java",
+          "module": "alphanumeric-comparator",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "com.github.doyaaaaaken",
+          "module": "kotlin-csv-jvm",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.kodein.emoji",
+          "module": "emoji-kt",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-stdlib-2.2.0.jar",
+          "url": "quarkdown-stdlib-2.2.0.jar",
+          "size": 312924,
+          "sha512": "245e7fec39139c3b27672743502e4825b666abd860a60be3669610250ddc8abbdf87ba5c0405eaa958f48972348b4db1503212e9b46ebae18fe28031541a43ce",
+          "sha256": "44e8fdb4aa95555965ec308f8a40ae59fce383c3ef29c0f3f5d4129be7205e4f",
+          "sha1": "8bda11af8f51535e50ab9fd79d23b3ab2fb5ea13",
+          "md5": "15e9c974bf16efb947f9adc1fec7cd70"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-stdlib-2.2.0-sources.jar",
+          "url": "quarkdown-stdlib-2.2.0-sources.jar",
+          "size": 78458,
+          "sha512": "93a81b5ab339fc2f45e41657d45572183eced69e15bc919e70e4a0ce7bb03900537bfc215c700caa7c754b6a6d5f187d918ffe9ad92e717d2108cca42d1121f9",
+          "sha256": "1b61d1ec16857a978b689b0966ab04d688b45594403fec8d9987a3b56d294451",
+          "sha1": "69905911419bf7dc8a57217c7ef62c077b7cc0fb",
+          "md5": "f5137a43130643a751710a2382e1b6d5"
+        },
+        {
+          "name": "quarkdown-stdlib-2.2.0-sources.jar",
+          "url": "quarkdown-stdlib-2.2.0-sources.jar",
+          "size": 78458,
+          "sha512": "93a81b5ab339fc2f45e41657d45572183eced69e15bc919e70e4a0ce7bb03900537bfc215c700caa7c754b6a6d5f187d918ffe9ad92e717d2108cca42d1121f9",
+          "sha256": "1b61d1ec16857a978b689b0966ab04d688b45594403fec8d9987a3b56d294451",
+          "sha1": "69905911419bf7dc8a57217c7ef62c077b7cc0fb",
+          "md5": "f5137a43130643a751710a2382e1b6d5"
+        }
+      ]
+    }
+  ]
+}

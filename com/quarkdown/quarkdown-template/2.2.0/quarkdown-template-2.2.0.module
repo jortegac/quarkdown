@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-template",
+    "version": "2.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.2.0.jar",
+          "url": "quarkdown-template-2.2.0.jar",
+          "size": 27951,
+          "sha512": "bf7aaeff49b1c4ae152e0073b252804a3a53ff75d11f7a816ca78da6cd99b7497d5eaef4378fe1dad6af046d7ebd90ee6ef9daafe6317b82b158ec084703e5ab",
+          "sha256": "999debf49de500346f7258e5443509742a287c562f7317d2b52cc80e89e0edc1",
+          "sha1": "e40df41def53dd93ed942de4af724530bbc156a6",
+          "md5": "248d5a9d4c5f2ff8c523921708cb319f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "gg.jte",
+          "module": "jte",
+          "version": {
+            "requires": "3.2.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.2.0.jar",
+          "url": "quarkdown-template-2.2.0.jar",
+          "size": 27951,
+          "sha512": "bf7aaeff49b1c4ae152e0073b252804a3a53ff75d11f7a816ca78da6cd99b7497d5eaef4378fe1dad6af046d7ebd90ee6ef9daafe6317b82b158ec084703e5ab",
+          "sha256": "999debf49de500346f7258e5443509742a287c562f7317d2b52cc80e89e0edc1",
+          "sha1": "e40df41def53dd93ed942de4af724530bbc156a6",
+          "md5": "248d5a9d4c5f2ff8c523921708cb319f"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-template-2.2.0-sources.jar",
+          "url": "quarkdown-template-2.2.0-sources.jar",
+          "size": 14641,
+          "sha512": "c20c43c821286b45bc604dcff588c96003e46d6a5b5df7b7dea38776104c890839ed32f6924687fa22a455feafb8cfa39e8084bcbbfc3c10e3480ee441bde564",
+          "sha256": "eb5227d7dd3e1ee8be618b30c57f76c06ac0e3dc7839159ee0e36b526d8a70a1",
+          "sha1": "448542a2263e14c0e329a6dc377b3cf286f297e0",
+          "md5": "d00bcc532438b230ba9dc4b6553bbdd7"
+        },
+        {
+          "name": "quarkdown-template-2.2.0-sources.jar",
+          "url": "quarkdown-template-2.2.0-sources.jar",
+          "size": 14641,
+          "sha512": "c20c43c821286b45bc604dcff588c96003e46d6a5b5df7b7dea38776104c890839ed32f6924687fa22a455feafb8cfa39e8084bcbbfc3c10e3480ee441bde564",
+          "sha256": "eb5227d7dd3e1ee8be618b30c57f76c06ac0e3dc7839159ee0e36b526d8a70a1",
+          "sha1": "448542a2263e14c0e329a6dc377b3cf286f297e0",
+          "md5": "d00bcc532438b230ba9dc4b6553bbdd7"
+        }
+      ]
+    }
+  ]
+}

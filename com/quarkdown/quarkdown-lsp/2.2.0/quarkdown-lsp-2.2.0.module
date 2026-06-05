@@ -1,0 +1,146 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-lsp",
+    "version": "2.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-lsp-2.2.0.jar",
+          "url": "quarkdown-lsp-2.2.0.jar",
+          "size": 159044,
+          "sha512": "a5db3f658e141ab3031e4284c624e0440a97f6e7ef1dc954e772212d06f13805dd822a90ff0b01b282d777977523ff8506cbc6ac20570716cc35c5f8d6baab3e",
+          "sha256": "042242d3cb7dfd544c37993210bf50a254d3538243c552c91dd67121e1d50403",
+          "sha1": "d60cee798fbbee77ac5885f9c14d5c079be81910",
+          "md5": "ad9267399046540a4245ccf6e3646a86"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.eclipse.lsp4j",
+          "module": "org.eclipse.lsp4j",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.github.h0tk3y.betterParse",
+          "module": "better-parse",
+          "version": {
+            "requires": "0.4.4"
+          }
+        },
+        {
+          "group": "com.vladsch.flexmark",
+          "module": "flexmark-html2md-converter",
+          "version": {
+            "requires": "0.64.8"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-quarkdoc-reader",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-lsp-2.2.0.jar",
+          "url": "quarkdown-lsp-2.2.0.jar",
+          "size": 159044,
+          "sha512": "a5db3f658e141ab3031e4284c624e0440a97f6e7ef1dc954e772212d06f13805dd822a90ff0b01b282d777977523ff8506cbc6ac20570716cc35c5f8d6baab3e",
+          "sha256": "042242d3cb7dfd544c37993210bf50a254d3538243c552c91dd67121e1d50403",
+          "sha1": "d60cee798fbbee77ac5885f9c14d5c079be81910",
+          "md5": "ad9267399046540a4245ccf6e3646a86"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-lsp-2.2.0-sources.jar",
+          "url": "quarkdown-lsp-2.2.0-sources.jar",
+          "size": 62722,
+          "sha512": "8e715f14bc9b89e59974bedd68d825ec62a36efce8bf856927239e99005c4700df01bf6b853ac66e5fb43a9a13121afb21dac4e9c754a74fed97b1d2da7d7581",
+          "sha256": "2bcf4dc8803d1f4d3b09e69a5be407e2ba2073ea1b55378ba1fe4d47b004bdc0",
+          "sha1": "4e0c0edc2e1f9c03e3eda7c2ff53ad96a4dd051e",
+          "md5": "72c352d899e363ab3bdae89b0d79df8c"
+        },
+        {
+          "name": "quarkdown-lsp-2.2.0-sources.jar",
+          "url": "quarkdown-lsp-2.2.0-sources.jar",
+          "size": 62722,
+          "sha512": "8e715f14bc9b89e59974bedd68d825ec62a36efce8bf856927239e99005c4700df01bf6b853ac66e5fb43a9a13121afb21dac4e9c754a74fed97b1d2da7d7581",
+          "sha256": "2bcf4dc8803d1f4d3b09e69a5be407e2ba2073ea1b55378ba1fe4d47b004bdc0",
+          "sha1": "4e0c0edc2e1f9c03e3eda7c2ff53ad96a4dd051e",
+          "md5": "72c352d899e363ab3bdae89b0d79df8c"
+        }
+      ]
+    }
+  ]
+}
