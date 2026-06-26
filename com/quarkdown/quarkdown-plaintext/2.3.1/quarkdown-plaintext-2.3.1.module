@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-plaintext",
+    "version": "2.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-plaintext-2.3.1.jar",
+          "url": "quarkdown-plaintext-2.3.1.jar",
+          "size": 28430,
+          "sha512": "7e17af2f91db87ddcfadfa7cbfbdf1acc7f4876bc3f1aa655f93d140de86b79b44d245e9eed630524c4bdd3795afbe4287f88dffba5d350e1eb5434902b8696c",
+          "sha256": "508d614920ad13509efa0aaa5becbce577d4659ad7d2505bce017f9b9397470e",
+          "sha1": "ed1327bc9d982f988bd69f62f328419a5829fd9b",
+          "md5": "9573facc07c19f65badea34a6a82f063"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-plaintext-2.3.1.jar",
+          "url": "quarkdown-plaintext-2.3.1.jar",
+          "size": 28430,
+          "sha512": "7e17af2f91db87ddcfadfa7cbfbdf1acc7f4876bc3f1aa655f93d140de86b79b44d245e9eed630524c4bdd3795afbe4287f88dffba5d350e1eb5434902b8696c",
+          "sha256": "508d614920ad13509efa0aaa5becbce577d4659ad7d2505bce017f9b9397470e",
+          "sha1": "ed1327bc9d982f988bd69f62f328419a5829fd9b",
+          "md5": "9573facc07c19f65badea34a6a82f063"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-plaintext-2.3.1-sources.jar",
+          "url": "quarkdown-plaintext-2.3.1-sources.jar",
+          "size": 17692,
+          "sha512": "da564befb263c4409108f78585316255571014cb3a007d6576bcf4877f7d70e9e4c4578d5ed33f3ed9cc7cfb7764cf6716f93b5aa5b5cb2b14290971ae56bdac",
+          "sha256": "f366d5c9f8117b612679f005df0dbe284d2fcd9c35d6293c58bf08ec8d8af802",
+          "sha1": "28a6134ee6133246b4db0045d57f9b5795280d64",
+          "md5": "0457a4f6040ff901e83e1d8faa558c92"
+        },
+        {
+          "name": "quarkdown-plaintext-2.3.1-sources.jar",
+          "url": "quarkdown-plaintext-2.3.1-sources.jar",
+          "size": 17692,
+          "sha512": "da564befb263c4409108f78585316255571014cb3a007d6576bcf4877f7d70e9e4c4578d5ed33f3ed9cc7cfb7764cf6716f93b5aa5b5cb2b14290971ae56bdac",
+          "sha256": "f366d5c9f8117b612679f005df0dbe284d2fcd9c35d6293c58bf08ec8d8af802",
+          "sha1": "28a6134ee6133246b4db0045d57f9b5795280d64",
+          "md5": "0457a4f6040ff901e83e1d8faa558c92"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-cli",
+    "version": "2.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-cli-2.3.1.jar",
+          "url": "quarkdown-cli-2.3.1.jar",
+          "size": 187061,
+          "sha512": "493c4ee78c1710befe6e734cd97ed05452ea9a62c2f5042e1dbce9bc42b3e488315f9aaa3c5e50737d8a4f20780d89d477a2f474abd3e3753cc377f0f5dbd7c6",
+          "sha256": "c3a4d9c30caa46fd845757d97bc8579413fb2553961a09d258a8dec9f3f29fa4",
+          "sha1": "6cac96f320fe268f7ca7fcf80952e1b15c922177",
+          "md5": "dc2b4aeb344fd39a3fe2e2a1e9583cab"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-template",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-html",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-plaintext",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-server",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-interaction",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-stdlib",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-lsp",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-install-layout-navigator",
+          "version": {
+            "requires": "2.3.1"
+          }
+        },
+        {
+          "group": "com.github.ajalt.clikt",
+          "module": "clikt",
+          "version": {
+            "requires": "5.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "io.methvin",
+          "module": "directory-watcher",
+          "version": {
+            "requires": "0.19.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-cli-2.3.1.jar",
+          "url": "quarkdown-cli-2.3.1.jar",
+          "size": 187061,
+          "sha512": "493c4ee78c1710befe6e734cd97ed05452ea9a62c2f5042e1dbce9bc42b3e488315f9aaa3c5e50737d8a4f20780d89d477a2f474abd3e3753cc377f0f5dbd7c6",
+          "sha256": "c3a4d9c30caa46fd845757d97bc8579413fb2553961a09d258a8dec9f3f29fa4",
+          "sha1": "6cac96f320fe268f7ca7fcf80952e1b15c922177",
+          "md5": "dc2b4aeb344fd39a3fe2e2a1e9583cab"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-cli-2.3.1-sources.jar",
+          "url": "quarkdown-cli-2.3.1-sources.jar",
+          "size": 85225,
+          "sha512": "84d4b575b401861c5c1a563fedfc0d78e815ee314179bad26c92301652a02699fdecfa8835897c1616c80a75a7fc919bc684c904a643b8bfce9109acd9568308",
+          "sha256": "382b8232b7ab751aa9fd82b2f6f063584d77e78cf41f54f03efc5f9d274983f9",
+          "sha1": "bfe0e3576778c7f1d91474cf3e1e96b52a3dc22e",
+          "md5": "3df0a45ed90dc1d069c5eb25cb30f6f5"
+        },
+        {
+          "name": "quarkdown-cli-2.3.1-sources.jar",
+          "url": "quarkdown-cli-2.3.1-sources.jar",
+          "size": 85225,
+          "sha512": "84d4b575b401861c5c1a563fedfc0d78e815ee314179bad26c92301652a02699fdecfa8835897c1616c80a75a7fc919bc684c904a643b8bfce9109acd9568308",
+          "sha256": "382b8232b7ab751aa9fd82b2f6f063584d77e78cf41f54f03efc5f9d274983f9",
+          "sha1": "bfe0e3576778c7f1d91474cf3e1e96b52a3dc22e",
+          "md5": "3df0a45ed90dc1d069c5eb25cb30f6f5"
+        }
+      ]
+    }
+  ]
+}

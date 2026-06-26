@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-quarkdoc-reader",
+    "version": "2.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-2.3.1.jar",
+          "url": "quarkdown-quarkdoc-reader-2.3.1.jar",
+          "size": 32192,
+          "sha512": "5db5e73f2d16bf8b81e04b907af820ac336ffcc3fa3e95a57d7c60b55d68665539b96bcc1049be0283ec1899c5d9f7b21ab881610c535607e9bd4c30262321cc",
+          "sha256": "49e8e70731232504981f2dd7a033d4eecbf8043252ea43ff4b411bd138e5079d",
+          "sha1": "25f067d5e82c3c59507beea456b1918987cf0e90",
+          "md5": "4b762b33d0ab969a6e34b5e8973c4c14"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jsoup",
+          "module": "jsoup",
+          "version": {
+            "requires": "1.22.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-2.3.1.jar",
+          "url": "quarkdown-quarkdoc-reader-2.3.1.jar",
+          "size": 32192,
+          "sha512": "5db5e73f2d16bf8b81e04b907af820ac336ffcc3fa3e95a57d7c60b55d68665539b96bcc1049be0283ec1899c5d9f7b21ab881610c535607e9bd4c30262321cc",
+          "sha256": "49e8e70731232504981f2dd7a033d4eecbf8043252ea43ff4b411bd138e5079d",
+          "sha1": "25f067d5e82c3c59507beea456b1918987cf0e90",
+          "md5": "4b762b33d0ab969a6e34b5e8973c4c14"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-2.3.1-sources.jar",
+          "url": "quarkdown-quarkdoc-reader-2.3.1-sources.jar",
+          "size": 18221,
+          "sha512": "c0ae901000ef13c3a44d18647d3245feb02b88b00411de6e1617b8df52ca793d29dc7b60b1ac29c09124f0e071f8f44be4a330823625dca7348e678649d4271c",
+          "sha256": "00fcb1600bae12a3401a4ab1c3d0a1666fcadee44299ab805255a302505e7cc8",
+          "sha1": "10083c6c0d87042eccb229b1b0448c138e037ec3",
+          "md5": "c503df00677b664d93ddc74db629f67a"
+        },
+        {
+          "name": "quarkdown-quarkdoc-reader-2.3.1-sources.jar",
+          "url": "quarkdown-quarkdoc-reader-2.3.1-sources.jar",
+          "size": 18221,
+          "sha512": "c0ae901000ef13c3a44d18647d3245feb02b88b00411de6e1617b8df52ca793d29dc7b60b1ac29c09124f0e071f8f44be4a330823625dca7348e678649d4271c",
+          "sha256": "00fcb1600bae12a3401a4ab1c3d0a1666fcadee44299ab805255a302505e7cc8",
+          "sha1": "10083c6c0d87042eccb229b1b0448c138e037ec3",
+          "md5": "c503df00677b664d93ddc74db629f67a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-template",
+    "version": "2.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.3.1.jar",
+          "url": "quarkdown-template-2.3.1.jar",
+          "size": 27979,
+          "sha512": "91bc93d0ab64922fcd927199e1b754354c93af5ad5992f89248a47ad44fa4900efe09cd85f20011b8f362bccf6fd9e67f9d54b4b40e4f27bdc09202cc9df2805",
+          "sha256": "3d5ec26339bff0150b5596412740d1475a237a820d071a317526d6148e78def6",
+          "sha1": "d24e0bde970659fe9fd488db2843a3d3be77f893",
+          "md5": "49ab2acf2d0c3d5bf5e69de4f2bf2720"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "gg.jte",
+          "module": "jte",
+          "version": {
+            "requires": "3.2.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.3.1.jar",
+          "url": "quarkdown-template-2.3.1.jar",
+          "size": 27979,
+          "sha512": "91bc93d0ab64922fcd927199e1b754354c93af5ad5992f89248a47ad44fa4900efe09cd85f20011b8f362bccf6fd9e67f9d54b4b40e4f27bdc09202cc9df2805",
+          "sha256": "3d5ec26339bff0150b5596412740d1475a237a820d071a317526d6148e78def6",
+          "sha1": "d24e0bde970659fe9fd488db2843a3d3be77f893",
+          "md5": "49ab2acf2d0c3d5bf5e69de4f2bf2720"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-template-2.3.1-sources.jar",
+          "url": "quarkdown-template-2.3.1-sources.jar",
+          "size": 14641,
+          "sha512": "71e122fde2b5de58f288c268eab8123f34e454203b6f097839b267fb4b5ae7278cc87a34cab7b00c01b6f54ea13abf90c6670494ea7ddfefa9dabe9cf3e95605",
+          "sha256": "69c677ce303dbddfe1ed73bff1c87f602598cf33930054ef69f040928eef24cc",
+          "sha1": "b163b5f66bd282c4258640817ea86a13e5211cf6",
+          "md5": "f8c2fecf62dc8b2757d5d1700c61e5c1"
+        },
+        {
+          "name": "quarkdown-template-2.3.1-sources.jar",
+          "url": "quarkdown-template-2.3.1-sources.jar",
+          "size": 14641,
+          "sha512": "71e122fde2b5de58f288c268eab8123f34e454203b6f097839b267fb4b5ae7278cc87a34cab7b00c01b6f54ea13abf90c6670494ea7ddfefa9dabe9cf3e95605",
+          "sha256": "69c677ce303dbddfe1ed73bff1c87f602598cf33930054ef69f040928eef24cc",
+          "sha1": "b163b5f66bd282c4258640817ea86a13e5211cf6",
+          "md5": "f8c2fecf62dc8b2757d5d1700c61e5c1"
+        }
+      ]
+    }
+  ]
+}
