@@ -1,0 +1,310 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-core",
+    "version": "2.6.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-http",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-2.6.1.jar",
+          "url": "quarkdown-core-2.6.1.jar",
+          "size": 1449749,
+          "sha512": "5e2ce1442164a5d9932fda935be082829b25675320be3e5e12080d8eb1c2e8a1d51a918443c076122d3ac4b31c90c8441d0e80d9ab51c0fb62872b463ceec2f5",
+          "sha256": "4977528ec870824d7f851758c348a643c726d4463ea320b5f13f40ccee5098bd",
+          "sha1": "572e099ebd76d5c86a00fd2decddffbd8ebf67b2",
+          "md5": "b1cbf22e6bcb716f325b5f59760550cf"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown.amber",
+          "module": "amber-annotations",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.18.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio-fakefilesystem",
+          "version": {
+            "requires": "3.18.2"
+          }
+        },
+        {
+          "group": "com.github.h0tk3y.betterParse",
+          "module": "better-parse",
+          "version": {
+            "requires": "0.4.4"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.mohamedrejeb.ksoup",
+          "module": "ksoup-entities",
+          "version": {
+            "requires": "0.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.github.ajalt.colormath",
+          "module": "colormath",
+          "version": {
+            "requires": "3.7.0"
+          }
+        },
+        {
+          "group": "com.quarkdown.bibliographer",
+          "module": "bibliographer",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-collections-immutable",
+          "version": {
+            "requires": "0.5.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-http",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-2.6.1.jar",
+          "url": "quarkdown-core-2.6.1.jar",
+          "size": 1449749,
+          "sha512": "5e2ce1442164a5d9932fda935be082829b25675320be3e5e12080d8eb1c2e8a1d51a918443c076122d3ac4b31c90c8441d0e80d9ab51c0fb62872b463ceec2f5",
+          "sha256": "4977528ec870824d7f851758c348a643c726d4463ea320b5f13f40ccee5098bd",
+          "sha1": "572e099ebd76d5c86a00fd2decddffbd8ebf67b2",
+          "md5": "b1cbf22e6bcb716f325b5f59760550cf"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-core-2.6.1-sources.jar",
+          "url": "quarkdown-core-2.6.1-sources.jar",
+          "size": 402081,
+          "sha512": "bf3d35bfb4ae360e6971ba9903728a9b0e652f15e91ef2bb35314f852035af995e170ce781067659dd45b0e56ea7a7a90eec87d4232fd14662ff4b2139218088",
+          "sha256": "3cf5cec058ff6a26493fdcc8cc55c003f3a497549bf71d84d0d5e9920f951eba",
+          "sha1": "5f5f3b8c50a1dc2ba0583b7efa8e662c701a4ef5",
+          "md5": "09c94ad8b58c466003f83f03b9750281"
+        },
+        {
+          "name": "quarkdown-core-2.6.1-sources.jar",
+          "url": "quarkdown-core-2.6.1-sources.jar",
+          "size": 402081,
+          "sha512": "bf3d35bfb4ae360e6971ba9903728a9b0e652f15e91ef2bb35314f852035af995e170ce781067659dd45b0e56ea7a7a90eec87d4232fd14662ff4b2139218088",
+          "sha256": "3cf5cec058ff6a26493fdcc8cc55c003f3a497549bf71d84d0d5e9920f951eba",
+          "sha1": "5f5f3b8c50a1dc2ba0583b7efa8e662c701a4ef5",
+          "md5": "09c94ad8b58c466003f83f03b9750281"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-2.6.1-test-fixtures.jar",
+          "url": "quarkdown-core-2.6.1-test-fixtures.jar",
+          "size": 46095,
+          "sha512": "fe515a6346102413855fcdee602bc83cbb3fb605907650043766e2078a3e298eeba890e2e9d0366c6081e8610878f0fd7c526a991ed05ef5aea2ed37d14db9ff",
+          "sha256": "cd8c536f5a96425ac53f0f378aba38f8fb2931d4e9087958acd9c4fcaa359756",
+          "sha1": "4b28a24bed2d1848b922d4e1f54bb8f681682e9f",
+          "md5": "c092859541dec144328d408994fba6a1"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.quarkdown",
+          "name": "quarkdown-core-test-fixtures",
+          "version": "2.6.1"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test"
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.27.6"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-2.6.1-test-fixtures.jar",
+          "url": "quarkdown-core-2.6.1-test-fixtures.jar",
+          "size": 46095,
+          "sha512": "fe515a6346102413855fcdee602bc83cbb3fb605907650043766e2078a3e298eeba890e2e9d0366c6081e8610878f0fd7c526a991ed05ef5aea2ed37d14db9ff",
+          "sha256": "cd8c536f5a96425ac53f0f378aba38f8fb2931d4e9087958acd9c4fcaa359756",
+          "sha1": "4b28a24bed2d1848b922d4e1f54bb8f681682e9f",
+          "md5": "c092859541dec144328d408994fba6a1"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.quarkdown",
+          "name": "quarkdown-core-test-fixtures",
+          "version": "2.6.1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-install-layout-navigator",
+    "version": "2.6.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-install-layout-navigator-2.6.1.jar",
+          "url": "quarkdown-install-layout-navigator-2.6.1.jar",
+          "size": 31219,
+          "sha512": "a3ee61859cd786c88893dd524aa40c9789e935efc992a5f094bd47d277d4bc24e9864602d4aa3700d5ea4f40f03b91fa304fcff378b60b8dc5ecb87c994c0462",
+          "sha256": "eedbeefdc560b161cd09b7484bff7df9b9e15d661ec84a337cc8a78c4afdd838",
+          "sha1": "1e138562dd533d5c134ede7ef1bcb319d5c9faec",
+          "md5": "45c57a1393e805711ae1ce2edad7f6cb"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-install-layout-navigator-2.6.1.jar",
+          "url": "quarkdown-install-layout-navigator-2.6.1.jar",
+          "size": 31219,
+          "sha512": "a3ee61859cd786c88893dd524aa40c9789e935efc992a5f094bd47d277d4bc24e9864602d4aa3700d5ea4f40f03b91fa304fcff378b60b8dc5ecb87c994c0462",
+          "sha256": "eedbeefdc560b161cd09b7484bff7df9b9e15d661ec84a337cc8a78c4afdd838",
+          "sha1": "1e138562dd533d5c134ede7ef1bcb319d5c9faec",
+          "md5": "45c57a1393e805711ae1ce2edad7f6cb"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-install-layout-navigator-2.6.1-sources.jar",
+          "url": "quarkdown-install-layout-navigator-2.6.1-sources.jar",
+          "size": 16556,
+          "sha512": "ecc886b3eda70c376596de7971e7dd1dd306a9da7fa669bd2d035d33d0603d8c7fd8de300dfc863444e8d29526f68af1a390b2508f0f0400c1e3304a757a5ff2",
+          "sha256": "58cd13e095f141815bac8ed6b42b3338de79122df9dc21ff9ee3dc8ba40e4ce2",
+          "sha1": "fee9b02a1fa60f49331f3d14b42a629730d4c699",
+          "md5": "59e9e4102539becf4c19e55258d31a75"
+        },
+        {
+          "name": "quarkdown-install-layout-navigator-2.6.1-sources.jar",
+          "url": "quarkdown-install-layout-navigator-2.6.1-sources.jar",
+          "size": 16556,
+          "sha512": "ecc886b3eda70c376596de7971e7dd1dd306a9da7fa669bd2d035d33d0603d8c7fd8de300dfc863444e8d29526f68af1a390b2508f0f0400c1e3304a757a5ff2",
+          "sha256": "58cd13e095f141815bac8ed6b42b3338de79122df9dc21ff9ee3dc8ba40e4ce2",
+          "sha1": "fee9b02a1fa60f49331f3d14b42a629730d4c699",
+          "md5": "59e9e4102539becf4c19e55258d31a75"
+        }
+      ]
+    }
+  ]
+}

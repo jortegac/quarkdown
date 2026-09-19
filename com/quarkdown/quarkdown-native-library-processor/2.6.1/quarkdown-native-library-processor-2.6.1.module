@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-native-library-processor",
+    "version": "2.6.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.1.jar",
+          "url": "quarkdown-native-library-processor-2.6.1.jar",
+          "size": 160036,
+          "sha512": "5f22c4480920980c289bd9ea72678b74d814f4aca570041fa7b9b14e8ae3430faa0df47d37f7b8b6fbedcdf5cfef56d81149573c8bb8eefb3accb5c332cb38fb",
+          "sha256": "024513fc8274eff59a0dfd1c01aff067c07b5c30be8acd23be0e0caa36b25de1",
+          "sha1": "4c743ccd996a9ba4197885b86bb5b1701be37d2f",
+          "md5": "e51c99108f83626b052737118aa6f162"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.devtools.ksp",
+          "module": "symbol-processing-api",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.1.jar",
+          "url": "quarkdown-native-library-processor-2.6.1.jar",
+          "size": 160036,
+          "sha512": "5f22c4480920980c289bd9ea72678b74d814f4aca570041fa7b9b14e8ae3430faa0df47d37f7b8b6fbedcdf5cfef56d81149573c8bb8eefb3accb5c332cb38fb",
+          "sha256": "024513fc8274eff59a0dfd1c01aff067c07b5c30be8acd23be0e0caa36b25de1",
+          "sha1": "4c743ccd996a9ba4197885b86bb5b1701be37d2f",
+          "md5": "e51c99108f83626b052737118aa6f162"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.1-sources.jar",
+          "url": "quarkdown-native-library-processor-2.6.1-sources.jar",
+          "size": 57782,
+          "sha512": "1fd3abf564a620432b2dac6f225ecdedf02a9d67a26f0447a2bd56c0e9bea8932f4a0a088ce4947612fd71817496f319f6621939ac8c3a596f2a886d954974f5",
+          "sha256": "01e6a91bdd246395ce0279edddb2c7fe6dbc55682b63f3da07de78ead827c031",
+          "sha1": "973aa19d02aed4d5ab4e0029183195e4d7632c1a",
+          "md5": "313e4cc7617a322784703bae56c04826"
+        },
+        {
+          "name": "quarkdown-native-library-processor-2.6.1-sources.jar",
+          "url": "quarkdown-native-library-processor-2.6.1-sources.jar",
+          "size": 57782,
+          "sha512": "1fd3abf564a620432b2dac6f225ecdedf02a9d67a26f0447a2bd56c0e9bea8932f4a0a088ce4947612fd71817496f319f6621939ac8c3a596f2a886d954974f5",
+          "sha256": "01e6a91bdd246395ce0279edddb2c7fe6dbc55682b63f3da07de78ead827c031",
+          "sha1": "973aa19d02aed4d5ab4e0029183195e4d7632c1a",
+          "md5": "313e4cc7617a322784703bae56c04826"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-markdown",
+    "version": "2.6.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-markdown-2.6.1.jar",
+          "url": "quarkdown-markdown-2.6.1.jar",
+          "size": 30699,
+          "sha512": "6eb893727c41abd7ce8f641e4f6ff44a93275f50e985ef81e4880863f5373d00a04245dc1a9b0da0f6b4cb397b2bf091f005a8264d899ad882ea2d501adff26c",
+          "sha256": "9b813b3f9114888fe8ba9a12e93d9fb4c17e662cb2345a092410c883473b4cdd",
+          "sha1": "6be1abca9eb9387c8b3efab3e374c03817a70a5e",
+          "md5": "5d167b2322b1d257cd130d990c849434"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-html",
+          "version": {
+            "requires": "2.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-markdown-2.6.1.jar",
+          "url": "quarkdown-markdown-2.6.1.jar",
+          "size": 30699,
+          "sha512": "6eb893727c41abd7ce8f641e4f6ff44a93275f50e985ef81e4880863f5373d00a04245dc1a9b0da0f6b4cb397b2bf091f005a8264d899ad882ea2d501adff26c",
+          "sha256": "9b813b3f9114888fe8ba9a12e93d9fb4c17e662cb2345a092410c883473b4cdd",
+          "sha1": "6be1abca9eb9387c8b3efab3e374c03817a70a5e",
+          "md5": "5d167b2322b1d257cd130d990c849434"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-markdown-2.6.1-sources.jar",
+          "url": "quarkdown-markdown-2.6.1-sources.jar",
+          "size": 18004,
+          "sha512": "1512d5801a3c410486dd2c0eaa18c813b3979ac108526223feddf0166311cfc93bd91bff3dfd094bfbdbbc3e12acb1f8af2a7bb0b624d363c9b08b971621f196",
+          "sha256": "e8f90b16a212740fc4805ff78e1e4eedb5866d336186f4f29a0dc0be988918d7",
+          "sha1": "998fbe5b60aec2c0e91336d6947e509777466373",
+          "md5": "7d593503c6b5bf6862c0b140ca40199d"
+        },
+        {
+          "name": "quarkdown-markdown-2.6.1-sources.jar",
+          "url": "quarkdown-markdown-2.6.1-sources.jar",
+          "size": 18004,
+          "sha512": "1512d5801a3c410486dd2c0eaa18c813b3979ac108526223feddf0166311cfc93bd91bff3dfd094bfbdbbc3e12acb1f8af2a7bb0b624d363c9b08b971621f196",
+          "sha256": "e8f90b16a212740fc4805ff78e1e4eedb5866d336186f4f29a0dc0be988918d7",
+          "sha1": "998fbe5b60aec2c0e91336d6947e509777466373",
+          "md5": "7d593503c6b5bf6862c0b140ca40199d"
+        }
+      ]
+    }
+  ]
+}
