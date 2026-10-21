@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-template",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.6.4.jar",
+          "url": "quarkdown-template-2.6.4.jar",
+          "size": 30566,
+          "sha512": "7b996519e9d9acf585fbea3b5db049a1bc05b291a300e7cbf0592542d67e78180184394dae28154fa46e69ccd1903a328ee58844baad35935f3d97d80b77c7b7",
+          "sha256": "9c54e687a1c2a17be08e1a6d99917502cf68b04cc2a5b8e0fa1dce9ab3fabefc",
+          "sha1": "043558704b3e0a08142473832874485c487ee919",
+          "md5": "16349d91a4f898f3f9710e38139e0ebc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "gg.jte",
+          "module": "jte",
+          "version": {
+            "requires": "3.2.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-template-2.6.4.jar",
+          "url": "quarkdown-template-2.6.4.jar",
+          "size": 30566,
+          "sha512": "7b996519e9d9acf585fbea3b5db049a1bc05b291a300e7cbf0592542d67e78180184394dae28154fa46e69ccd1903a328ee58844baad35935f3d97d80b77c7b7",
+          "sha256": "9c54e687a1c2a17be08e1a6d99917502cf68b04cc2a5b8e0fa1dce9ab3fabefc",
+          "sha1": "043558704b3e0a08142473832874485c487ee919",
+          "md5": "16349d91a4f898f3f9710e38139e0ebc"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-template-2.6.4-sources.jar",
+          "url": "quarkdown-template-2.6.4-sources.jar",
+          "size": 14641,
+          "sha512": "9d2d04ed2f2f1e6b293d9a6099ef2fe51be070e08ab3f927bb4cdbe7c7be7ec5f9e65326d4adc2cf4d4917081380cb398f5c95ddca2df0d17a0b206d7b3783ef",
+          "sha256": "95a4ecb80103b93389f7d9702b3df471c338218193dd6a4626039dfa4e5da58f",
+          "sha1": "421a5e5e7774aff8508dfdf192888014134bf8c8",
+          "md5": "56e6c1190066f92c6ba597f32d3fa3fc"
+        },
+        {
+          "name": "quarkdown-template-2.6.4-sources.jar",
+          "url": "quarkdown-template-2.6.4-sources.jar",
+          "size": 14641,
+          "sha512": "9d2d04ed2f2f1e6b293d9a6099ef2fe51be070e08ab3f927bb4cdbe7c7be7ec5f9e65326d4adc2cf4d4917081380cb398f5c95ddca2df0d17a0b206d7b3783ef",
+          "sha256": "95a4ecb80103b93389f7d9702b3df471c338218193dd6a4626039dfa4e5da58f",
+          "sha1": "421a5e5e7774aff8508dfdf192888014134bf8c8",
+          "md5": "56e6c1190066f92c6ba597f32d3fa3fc"
+        }
+      ]
+    }
+  ]
+}

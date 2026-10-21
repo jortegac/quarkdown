@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-locale-table-processor",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-locale-table-processor-2.6.4.jar",
+          "url": "quarkdown-locale-table-processor-2.6.4.jar",
+          "size": 25817,
+          "sha512": "afe4ac3dc79c538277cadd73484464481c4371e17554baac58c23553c369572c283f8967f0dac85736fa8c23cd6923557cf227271932cb0b157eeb1ffced0557",
+          "sha256": "1bde217657783cdde47760436e27a08995aa6bc86979f9d5d2c07a6bc1da55b6",
+          "sha1": "338be6e3620a25d1c38436998ba39e6a3e183615",
+          "md5": "e7294a6d3efe5b9772c34e24cfcb96ea"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.devtools.ksp",
+          "module": "symbol-processing-api",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-locale-table-processor-2.6.4.jar",
+          "url": "quarkdown-locale-table-processor-2.6.4.jar",
+          "size": 25817,
+          "sha512": "afe4ac3dc79c538277cadd73484464481c4371e17554baac58c23553c369572c283f8967f0dac85736fa8c23cd6923557cf227271932cb0b157eeb1ffced0557",
+          "sha256": "1bde217657783cdde47760436e27a08995aa6bc86979f9d5d2c07a6bc1da55b6",
+          "sha1": "338be6e3620a25d1c38436998ba39e6a3e183615",
+          "md5": "e7294a6d3efe5b9772c34e24cfcb96ea"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-locale-table-processor-2.6.4-sources.jar",
+          "url": "quarkdown-locale-table-processor-2.6.4-sources.jar",
+          "size": 16275,
+          "sha512": "944372313e7b30198e5ff54596896e979c6ca8fd4c5fdc27f67b786d57766571738dc235da34e4722a20c102e233d15c216eaa00aec310e551368ce4de487dbf",
+          "sha256": "79b903a46aa9eacae2f0ed1503b96ef4dba6e9d403ac7c51e26fa49f5e87d3b2",
+          "sha1": "3f6ef789ae89bbe5458cb7d8d99312fc8f0d6272",
+          "md5": "bd4df294f620e31a0a0a303aff35dbc4"
+        },
+        {
+          "name": "quarkdown-locale-table-processor-2.6.4-sources.jar",
+          "url": "quarkdown-locale-table-processor-2.6.4-sources.jar",
+          "size": 16275,
+          "sha512": "944372313e7b30198e5ff54596896e979c6ca8fd4c5fdc27f67b786d57766571738dc235da34e4722a20c102e233d15c216eaa00aec310e551368ce4de487dbf",
+          "sha256": "79b903a46aa9eacae2f0ed1503b96ef4dba6e9d403ac7c51e26fa49f5e87d3b2",
+          "sha1": "3f6ef789ae89bbe5458cb7d8d99312fc8f0d6272",
+          "md5": "bd4df294f620e31a0a0a303aff35dbc4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quarkdown-quarkdoc-reader/2.6.4/quarkdown-quarkdoc-reader-2.6.4.module",
+    "group": "com.quarkdown",
+    "module": "quarkdown-quarkdoc-reader",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-jvm-2.6.4.jar",
+          "url": "quarkdown-quarkdoc-reader-jvm-2.6.4.jar",
+          "size": 49520,
+          "sha512": "2aa26da679cb5c3682f6e1867901c19ca5fddcb5eb18b8e476543b916c9512d11b3f9efec2268707bf9cb4cfb80436afa83025c2cf5e67c62e5b6791c1f78255",
+          "sha256": "32d617f3f1aeaca09f646ac5cbccdc74aa7d22f84ba86e96c4605a709c008fdb",
+          "sha1": "1288ffa657f0e6fac53a420ee86904cf5851490e",
+          "md5": "52fa2d4ed6b6f57c543bff13fc6c4267"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-jvm-2.6.4.jar",
+          "url": "quarkdown-quarkdoc-reader-jvm-2.6.4.jar",
+          "size": 49520,
+          "sha512": "2aa26da679cb5c3682f6e1867901c19ca5fddcb5eb18b8e476543b916c9512d11b3f9efec2268707bf9cb4cfb80436afa83025c2cf5e67c62e5b6791c1f78255",
+          "sha256": "32d617f3f1aeaca09f646ac5cbccdc74aa7d22f84ba86e96c4605a709c008fdb",
+          "sha1": "1288ffa657f0e6fac53a420ee86904cf5851490e",
+          "md5": "52fa2d4ed6b6f57c543bff13fc6c4267"
+        }
+      ]
+    }
+  ]
+}

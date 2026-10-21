@@ -1,0 +1,121 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quarkdown-stdlib/2.6.4/quarkdown-stdlib-2.6.4.module",
+    "group": "com.quarkdown",
+    "module": "quarkdown-stdlib",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-stdlib-jvm-2.6.4.jar",
+          "url": "quarkdown-stdlib-jvm-2.6.4.jar",
+          "size": 781882,
+          "sha512": "a97b0bed776a0f3e954a7a798b3e8b10fc35ad971bd594f14adc262e3f3db8336a4252dd91f21d7fba4f706ae6ac378e111ab1aba9c1d14475447101e0d404da",
+          "sha256": "b8bc92f088bb75968ed3598b1b544027687d4cdfa6398797900a3da82ead899c",
+          "sha1": "0158d6d952e8fffa8aae45f54a23b72af9e6235f",
+          "md5": "3d85ac310216865936264d5e966d2704"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        },
+        {
+          "group": "com.jsoizo",
+          "module": "kotlin-csv",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-native-library-annotations",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.kodein.emoji",
+          "module": "emoji-kt",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-stdlib-jvm-2.6.4.jar",
+          "url": "quarkdown-stdlib-jvm-2.6.4.jar",
+          "size": 781882,
+          "sha512": "a97b0bed776a0f3e954a7a798b3e8b10fc35ad971bd594f14adc262e3f3db8336a4252dd91f21d7fba4f706ae6ac378e111ab1aba9c1d14475447101e0d404da",
+          "sha256": "b8bc92f088bb75968ed3598b1b544027687d4cdfa6398797900a3da82ead899c",
+          "sha1": "0158d6d952e8fffa8aae45f54a23b72af9e6235f",
+          "md5": "3d85ac310216865936264d5e966d2704"
+        }
+      ]
+    }
+  ]
+}

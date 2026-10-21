@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-quarkdoc-reader",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-quarkdoc-reader-metadata-2.6.4.jar",
+          "url": "quarkdown-quarkdoc-reader-2.6.4.jar",
+          "size": 12906,
+          "sha512": "ac804caca46d755f07f2327c50b75c115d70bde40a0107e0a71badb4c0bec8d842474d966ec8b103e19dc7274596d1d597ce653e3346c015e7d6fee48830f662",
+          "sha256": "58433b5126aef8496496ee82d7a45cb1b41981cd1110efb95d27857b430f4294",
+          "sha1": "bd949fc869031aabb937013c98dc0556d5650094",
+          "md5": "1bcd9cb120130b29ea3413d97d2b86ad"
+        }
+      ]
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../quarkdown-quarkdoc-reader-jvm/2.6.4/quarkdown-quarkdoc-reader-jvm-2.6.4.module",
+        "group": "com.quarkdown",
+        "module": "quarkdown-quarkdoc-reader-jvm",
+        "version": "2.6.4"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../quarkdown-quarkdoc-reader-jvm/2.6.4/quarkdown-quarkdoc-reader-jvm-2.6.4.module",
+        "group": "com.quarkdown",
+        "module": "quarkdown-quarkdoc-reader-jvm",
+        "version": "2.6.4"
+      }
+    }
+  ]
+}

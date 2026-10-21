@@ -1,0 +1,125 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-native-library-processor",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.4.jar",
+          "url": "quarkdown-native-library-processor-2.6.4.jar",
+          "size": 157670,
+          "sha512": "a1127716dc9bea3ec4f0865bce0300f3a218cde2962d4ab55daed79a5faf912e43c47879977c294b6fd31b003602ecf6b6a7c917c11db8716e4d06732fad19cb",
+          "sha256": "3965ead87efc8420f6d194c4a1dfec0d35b94055eec1978a262367ec2a862d9e",
+          "sha1": "9f07231623a0d0a1e84b624f1b4d486b502aa5ce",
+          "md5": "b962e5b97494ca38e7521240aeff8ffc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.devtools.ksp",
+          "module": "symbol-processing-api",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-native-library-annotations",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.4.jar",
+          "url": "quarkdown-native-library-processor-2.6.4.jar",
+          "size": 157670,
+          "sha512": "a1127716dc9bea3ec4f0865bce0300f3a218cde2962d4ab55daed79a5faf912e43c47879977c294b6fd31b003602ecf6b6a7c917c11db8716e4d06732fad19cb",
+          "sha256": "3965ead87efc8420f6d194c4a1dfec0d35b94055eec1978a262367ec2a862d9e",
+          "sha1": "9f07231623a0d0a1e84b624f1b4d486b502aa5ce",
+          "md5": "b962e5b97494ca38e7521240aeff8ffc"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-native-library-processor-2.6.4-sources.jar",
+          "url": "quarkdown-native-library-processor-2.6.4-sources.jar",
+          "size": 55577,
+          "sha512": "ea46a7a9054839d9a5eecf46813237884068aa449a8c4e5c8eca49236e18b8c3947616e528269745620cf021a32f836e5a22279287fce79c291e4eb7f7b47193",
+          "sha256": "a7c2f04c3072dcd2a406ee4eadc46d03edc860e2eef1b3d88660b74dabcee70b",
+          "sha1": "0d72a843fb3fed4f5fd1c36e621bade714d2ce1e",
+          "md5": "5e592518bd3aaea13026a585306eb7f1"
+        },
+        {
+          "name": "quarkdown-native-library-processor-2.6.4-sources.jar",
+          "url": "quarkdown-native-library-processor-2.6.4-sources.jar",
+          "size": 55577,
+          "sha512": "ea46a7a9054839d9a5eecf46813237884068aa449a8c4e5c8eca49236e18b8c3947616e528269745620cf021a32f836e5a22279287fce79c291e4eb7f7b47193",
+          "sha256": "a7c2f04c3072dcd2a406ee4eadc46d03edc860e2eef1b3d88660b74dabcee70b",
+          "sha1": "0d72a843fb3fed4f5fd1c36e621bade714d2ce1e",
+          "md5": "5e592518bd3aaea13026a585306eb7f1"
+        }
+      ]
+    }
+  ]
+}

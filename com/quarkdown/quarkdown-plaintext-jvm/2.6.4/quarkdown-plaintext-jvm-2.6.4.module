@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quarkdown-plaintext/2.6.4/quarkdown-plaintext-2.6.4.module",
+    "group": "com.quarkdown",
+    "module": "quarkdown-plaintext",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-plaintext-jvm-2.6.4.jar",
+          "url": "quarkdown-plaintext-jvm-2.6.4.jar",
+          "size": 22846,
+          "sha512": "911a513b6297b0df2b08a9df8b622ecbfa6505ebedebee05465fab9310effa64f0849f4ec8782d91efb686a273c51ed892f3b458d10b79b3b265652337117c7a",
+          "sha256": "c3b31ed33811fb7211e2521a1daa41e0d6fe8bbc6d30a8c0e8301c5305c71cc9",
+          "sha1": "6ef27d084a25bbb1a0178d8feb58403ea5d09906",
+          "md5": "7b191e544ec02c8331665724602cbb40"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-plaintext-jvm-2.6.4.jar",
+          "url": "quarkdown-plaintext-jvm-2.6.4.jar",
+          "size": 22846,
+          "sha512": "911a513b6297b0df2b08a9df8b622ecbfa6505ebedebee05465fab9310effa64f0849f4ec8782d91efb686a273c51ed892f3b458d10b79b3b265652337117c7a",
+          "sha256": "c3b31ed33811fb7211e2521a1daa41e0d6fe8bbc6d30a8c0e8301c5305c71cc9",
+          "sha1": "6ef27d084a25bbb1a0178d8feb58403ea5d09906",
+          "md5": "7b191e544ec02c8331665724602cbb40"
+        }
+      ]
+    }
+  ]
+}

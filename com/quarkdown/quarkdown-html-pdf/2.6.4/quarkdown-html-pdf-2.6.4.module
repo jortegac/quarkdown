@@ -1,0 +1,153 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-html-pdf",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-html-pdf-2.6.4.jar",
+          "url": "quarkdown-html-pdf-2.6.4.jar",
+          "size": 31676,
+          "sha512": "f013fe9502c45af1b873d78003099b6dee000ce42ef35a1eb532acd5fb1ddecc8a502a71c2fbba4d37905be249b5f58d09d2c629e95957d0e13e2c7c6a6a89e3",
+          "sha256": "56165c122633dcf3c6b3db213df94940b163c2941b55f5f6fc30fc5338f67cfe",
+          "sha1": "e5afe0ff8dde1cf4f6b19b6667f5f4a506f63332",
+          "md5": "0a4b68ace68b09c879e825219490e3b4"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-html",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-install-layout-navigator",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-interaction",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-server",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-html-pdf-2.6.4.jar",
+          "url": "quarkdown-html-pdf-2.6.4.jar",
+          "size": 31676,
+          "sha512": "f013fe9502c45af1b873d78003099b6dee000ce42ef35a1eb532acd5fb1ddecc8a502a71c2fbba4d37905be249b5f58d09d2c629e95957d0e13e2c7c6a6a89e3",
+          "sha256": "56165c122633dcf3c6b3db213df94940b163c2941b55f5f6fc30fc5338f67cfe",
+          "sha1": "e5afe0ff8dde1cf4f6b19b6667f5f4a506f63332",
+          "md5": "0a4b68ace68b09c879e825219490e3b4"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-html-pdf-2.6.4-sources.jar",
+          "url": "quarkdown-html-pdf-2.6.4-sources.jar",
+          "size": 18470,
+          "sha512": "8d1e6352a758844ad9b1ed494c4fd4864358c827a0925ba3b65d6ff17ee60a2075088c29ae34abaf0bf5c00abb8cf4fdd33bac0fc24ae707d03d21cc57f32a54",
+          "sha256": "47c534add1fc3d5414d9e167f85177c10caa943162bdbb69aa2c8bd73a8f8029",
+          "sha1": "1744256c9e004e211b9d807ac3ad62d82e536537",
+          "md5": "40d82b9931b53dc1d32ee25865a4c87f"
+        },
+        {
+          "name": "quarkdown-html-pdf-2.6.4-sources.jar",
+          "url": "quarkdown-html-pdf-2.6.4-sources.jar",
+          "size": 18470,
+          "sha512": "8d1e6352a758844ad9b1ed494c4fd4864358c827a0925ba3b65d6ff17ee60a2075088c29ae34abaf0bf5c00abb8cf4fdd33bac0fc24ae707d03d21cc57f32a54",
+          "sha256": "47c534add1fc3d5414d9e167f85177c10caa943162bdbb69aa2c8bd73a8f8029",
+          "sha1": "1744256c9e004e211b9d807ac3ad62d82e536537",
+          "md5": "40d82b9931b53dc1d32ee25865a4c87f"
+        }
+      ]
+    }
+  ]
+}

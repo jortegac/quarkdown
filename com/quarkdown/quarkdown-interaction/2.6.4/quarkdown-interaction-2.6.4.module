@@ -1,0 +1,153 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.quarkdown",
+    "module": "quarkdown-interaction",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.6.4.jar",
+          "url": "quarkdown-interaction-2.6.4.jar",
+          "size": 59527,
+          "sha512": "67da52d783aea5deddf368b82fa03209edded28565e236a13d84977ddad38a0dd5f8853e507ac4a12d5e9a9680c4b3616fa6902c7b10f63db8855fc1a8508752",
+          "sha256": "6cd9d60b55ff3a53eb36d1c7347532bf773d993ca5eb151d9f26118deab18e88",
+          "sha1": "8b7e3fb62a73725a2a59c104df0661f5ec59700d",
+          "md5": "e4bd8145785164d62365f9a8b131d5c1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.4"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-cio",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-websockets",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.6.4.jar",
+          "url": "quarkdown-interaction-2.6.4.jar",
+          "size": 59527,
+          "sha512": "67da52d783aea5deddf368b82fa03209edded28565e236a13d84977ddad38a0dd5f8853e507ac4a12d5e9a9680c4b3616fa6902c7b10f63db8855fc1a8508752",
+          "sha256": "6cd9d60b55ff3a53eb36d1c7347532bf773d993ca5eb151d9f26118deab18e88",
+          "sha1": "8b7e3fb62a73725a2a59c104df0661f5ec59700d",
+          "md5": "e4bd8145785164d62365f9a8b131d5c1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "quarkdown-interaction-2.6.4-sources.jar",
+          "url": "quarkdown-interaction-2.6.4-sources.jar",
+          "size": 22735,
+          "sha512": "146cb06025a6be45f77e5476a5b4405ff97910e1c69eb5d247b59880b63ca38adda86f85558aa46457cd09cdd25a16376f0a5e893aa85edc2dbc51e2e118ec99",
+          "sha256": "3cfe47fc9926e87fd1fe84a6765d076aa19d4fa9e915595f67bd2a4454b5b662",
+          "sha1": "b9a5bd42d7d07df4c37aa72caaa995380ca71dcf",
+          "md5": "21c28c95b059f21a961546b5b092e340"
+        },
+        {
+          "name": "quarkdown-interaction-2.6.4-sources.jar",
+          "url": "quarkdown-interaction-2.6.4-sources.jar",
+          "size": 22735,
+          "sha512": "146cb06025a6be45f77e5476a5b4405ff97910e1c69eb5d247b59880b63ca38adda86f85558aa46457cd09cdd25a16376f0a5e893aa85edc2dbc51e2e118ec99",
+          "sha256": "3cfe47fc9926e87fd1fe84a6765d076aa19d4fa9e915595f67bd2a4454b5b662",
+          "sha1": "b9a5bd42d7d07df4c37aa72caaa995380ca71dcf",
+          "md5": "21c28c95b059f21a961546b5b092e340"
+        }
+      ]
+    }
+  ]
+}

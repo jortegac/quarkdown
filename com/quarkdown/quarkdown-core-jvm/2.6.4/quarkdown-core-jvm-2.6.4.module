@@ -1,0 +1,177 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quarkdown-core/2.6.4/quarkdown-core-2.6.4.module",
+    "group": "com.quarkdown",
+    "module": "quarkdown-core",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-http",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "com.quarkdown.better-parse",
+          "module": "better-parse",
+          "version": {
+            "requires": "0.4.5"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-jvm-2.6.4.jar",
+          "url": "quarkdown-core-jvm-2.6.4.jar",
+          "size": 1636630,
+          "sha512": "aaed31ba30dd37d6b0268a2798f8126ac425176475745483ce490b41161ebfeec7cf84f16ca20fe8f2408ae14945d44b25e1c4ede1fe87091a4e9c0928d15971",
+          "sha256": "6bb63737cace4c9e1643ced43299a4a8477538412bb5213afd7387811b35516c",
+          "sha1": "7e284cf048a685720bdceac3632b1966095f7686",
+          "md5": "deabd4bd1b2a637b5aac612d023ff089"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-http",
+          "version": {
+            "requires": "3.5.2"
+          }
+        },
+        {
+          "group": "com.quarkdown.better-parse",
+          "module": "better-parse",
+          "version": {
+            "requires": "0.4.5"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        },
+        {
+          "group": "com.quarkdown.amber",
+          "module": "amber-annotations",
+          "version": {
+            "requires": "3.0.1"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.18.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio-fakefilesystem",
+          "version": {
+            "requires": "3.18.2"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.mohamedrejeb.ksoup",
+          "module": "ksoup-entities",
+          "version": {
+            "requires": "0.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.github.ajalt.colormath",
+          "module": "colormath",
+          "version": {
+            "requires": "3.7.0"
+          }
+        },
+        {
+          "group": "com.quarkdown.bibliographer",
+          "module": "bibliographer",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-collections-immutable",
+          "version": {
+            "requires": "0.5.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-core-jvm-2.6.4.jar",
+          "url": "quarkdown-core-jvm-2.6.4.jar",
+          "size": 1636630,
+          "sha512": "aaed31ba30dd37d6b0268a2798f8126ac425176475745483ce490b41161ebfeec7cf84f16ca20fe8f2408ae14945d44b25e1c4ede1fe87091a4e9c0928d15971",
+          "sha256": "6bb63737cace4c9e1643ced43299a4a8477538412bb5213afd7387811b35516c",
+          "sha1": "7e284cf048a685720bdceac3632b1966095f7686",
+          "md5": "deabd4bd1b2a637b5aac612d023ff089"
+        }
+      ]
+    }
+  ]
+}

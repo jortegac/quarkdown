@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quarkdown-install-layout-navigator/2.6.4/quarkdown-install-layout-navigator-2.6.4.module",
+    "group": "com.quarkdown",
+    "module": "quarkdown-install-layout-navigator",
+    "version": "2.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-install-layout-navigator-jvm-2.6.4.jar",
+          "url": "quarkdown-install-layout-navigator-jvm-2.6.4.jar",
+          "size": 32080,
+          "sha512": "8ae0805ef678d29b298f0caedfa623aef0e9dea9ceb9f55c367e10bc5b752a10132e0f47262a28b050779133697ceccf7a1783340140a208065fa04de62a7e87",
+          "sha256": "61bf6072d2597863e9a3081d9254da7a5b639414909628d6fac9e3c3a876df2e",
+          "sha1": "d42eceb202cccd45e7e8063db31c7408971d1b8c",
+          "md5": "398c23b82239dcb27d242aefcd73bb86"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        },
+        {
+          "group": "com.quarkdown",
+          "module": "quarkdown-core",
+          "version": {
+            "requires": "2.6.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quarkdown-install-layout-navigator-jvm-2.6.4.jar",
+          "url": "quarkdown-install-layout-navigator-jvm-2.6.4.jar",
+          "size": 32080,
+          "sha512": "8ae0805ef678d29b298f0caedfa623aef0e9dea9ceb9f55c367e10bc5b752a10132e0f47262a28b050779133697ceccf7a1783340140a208065fa04de62a7e87",
+          "sha256": "61bf6072d2597863e9a3081d9254da7a5b639414909628d6fac9e3c3a876df2e",
+          "sha1": "d42eceb202cccd45e7e8063db31c7408971d1b8c",
+          "md5": "398c23b82239dcb27d242aefcd73bb86"
+        }
+      ]
+    }
+  ]
+}
