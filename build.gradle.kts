@@ -32,7 +32,23 @@ allprojects {
 
 // Subprojects that should not produce a published Maven artifact.
 // `quarkdown-test` contains only integration tests and has no `src/main/`.
-val publicationExcludedSubprojects = setOf("quarkdown-test")
+// Subprojects that must not produce a published Maven artifact.
+//
+// `quarkdown-test` and `quarkdown-core-test-fixtures` carry only test code.
+//
+// `quarkdown-cli` and `quarkdown-lsp` are the two AGPL v3 modules; everything
+// else in the repository is GPL v3. This Maven repository exists so the viewer
+// can link the GPL modules without taking on AGPL's network source-availability
+// clause, so the AGPL artifacts are not published here at all. Nothing that is
+// published depends on them. Consumers who want the CLI should take it from
+// upstream's own distribution.
+val publicationExcludedSubprojects =
+    setOf(
+        "quarkdown-test",
+        "quarkdown-core-test-fixtures",
+        "quarkdown-cli",
+        "quarkdown-lsp",
+    )
 
 /**
  * Shared POM metadata applied to every Quarkdown Maven publication: project URL, licence,
@@ -86,9 +102,29 @@ subprojects {
         }
     }
 
+    // Multiplatform modules publish binaries only. Their sources jars read the
+    // directories KSP generates into, a wiring upstream never exercises because
+    // it does not publish these modules at all, and Gradle rejects the
+    // resulting implicit dependency. Nothing consuming this repository builds
+    // against Quarkdown sources, so the jars are simply left out rather than
+    // patched around. Plain JVM modules keep theirs, configured above.
+    plugins.withId("org.jetbrains.kotlin.multiplatform") {
+        extensions.configure<org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension> {
+            withSourcesJar(publish = false)
+        }
+    }
+
     afterEvaluate {
         if (project.name in publicationExcludedSubprojects) return@afterEvaluate
-        if (!plugins.hasPlugin("java")) return@afterEvaluate
+
+        // Since 2.6.4 the core modules are Kotlin Multiplatform with a single JVM
+        // target. The multiplatform plugin registers its own publications (the
+        // `kotlinMultiplatform` metadata module plus one per target) and does not
+        // apply the `java` plugin, so a `components["java"]` publication is both
+        // unavailable and unnecessary there. Plain JVM modules still need one.
+        val isMultiplatform = plugins.hasPlugin("org.jetbrains.kotlin.multiplatform")
+        val isJvmOnly = !isMultiplatform && plugins.hasPlugin("java")
+        if (!isMultiplatform && !isJvmOnly) return@afterEvaluate
 
         // GitHub Packages publication.
         //
@@ -103,14 +139,20 @@ subprojects {
         // serves it as a public, anonymous Maven repo at
         // `https://jortegac.github.io/quarkdown/`.
         extensions.configure<PublishingExtension> {
-            publications {
-                create<MavenPublication>("maven") {
-                    from(components["java"])
-                    pom {
-                        name.set(project.name)
-                        description.set("Quarkdown module: ${project.name}")
-                        publicationPomMetadata()
+            if (isJvmOnly) {
+                publications {
+                    create<MavenPublication>("maven") {
+                        from(components["java"])
                     }
+                }
+            }
+            // Applies to the publications created above and to the ones the
+            // multiplatform plugin contributes on its own.
+            publications.withType<MavenPublication>().configureEach {
+                pom {
+                    name.set(artifactId)
+                    description.set("Quarkdown module: $artifactId")
+                    publicationPomMetadata()
                 }
             }
             repositories {
